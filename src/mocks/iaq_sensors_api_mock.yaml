@@ -1,6 +1,6 @@
 openapi: '3.0.2'
 info:
-  title: IAQ Sensors Data - OpenAPI Specification
+  title: aiq-sensor-api
   description: This is a mock for IAQ sensors data API.
   termsOfService: http://localhost/tos/
   contact: 
@@ -9,7 +9,7 @@ info:
   license:
     name: MIT Licese
     url: https://opensource.org/licenses/MIT
-  version: '0.1'
+  version: '0.0.1'
 externalDocs:
   description: Find out more about this project
   url: https://inveniam.io/iaq-sensors
