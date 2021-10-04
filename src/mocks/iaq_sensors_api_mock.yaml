@@ -16,7 +16,6 @@ externalDocs:
 
 servers:
   - url: http://localhost:3333/v1
-  - url: http://api-iaq-sensors.inveniam.io/v1
 
 tags:
   - name: IAQ Sensors
@@ -53,6 +52,8 @@ paths:
           description: Invalid UUID supplied
         '404':
           description: Sensor not found
+      security:
+        - api_key: []
 
 components:
   schemas:
@@ -168,3 +169,8 @@ components:
         zip:
           type: string
           example: '33132'
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: api_key
+      in: header
